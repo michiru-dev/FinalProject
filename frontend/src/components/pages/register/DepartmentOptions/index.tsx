@@ -15,7 +15,7 @@ export function DepartmentOptions({
     useQueryOptionsData<OptionBase[]>(departments)
   return (
     <ShowOptions
-      labelName={'部　　署'}
+      labelName={'Department'}
       id={'department_id'}
       optionItem={departmentsData}
       onChange={onChange}

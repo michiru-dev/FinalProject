@@ -14,7 +14,7 @@ export function PositionOptions({
   const { data: positionsData } = useQueryOptionsData<OptionBase[]>(positions)
   return (
     <ShowOptions
-      labelName={'役　　職'}
+      labelName={'Postion'}
       id={'position_id'}
       optionItem={positionsData}
       onChange={onChange}

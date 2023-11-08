@@ -35,10 +35,10 @@ function Setting() {
         <div className="settingBox">
           <Tabs>
             <TabList>
-              <Tab>契約形態</Tab>
-              <Tab>部署</Tab>
-              <Tab>等級</Tab>
-              <Tab>役職</Tab>
+              <Tab>Contract Type</Tab>
+              <Tab>Department</Tab>
+              <Tab>Rank</Tab>
+              <Tab>Postion</Tab>
             </TabList>
 
             <TabPanel>

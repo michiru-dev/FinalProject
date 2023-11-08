@@ -30,18 +30,18 @@ function EmployeeInfoList({
       <table className="employeeList">
         <thead>
           <tr>
-            <th>姓</th>
-            <th>名</th>
-            <th>セイ</th>
-            <th>メイ</th>
-            <th>役職</th>
-            <th>部署</th>
-            <th>等級</th>
-            <th>契約形態</th>
-            <th>入社日</th>
-            <th>生年月日</th>
-            <th>最終学歴</th>
-            <th>電話番号</th>
+            <th>Sur</th>
+            <th>Given</th>
+            {/* <th>セイ</th>
+            <th>メイ</th> */}
+            <th>Postion</th>
+            <th>Department</th>
+            <th>Rank</th>
+            <th>Contract Type</th>
+            <th>Enter Date</th>
+            <th>Birthday</th>
+            <th>School</th>
+            <th>Phone number</th>
           </tr>
         </thead>
         <tbody>
@@ -50,8 +50,6 @@ function EmployeeInfoList({
               <tr key={employee.employee_id}>
                 <td>{employee.last_name}</td>
                 <td>{employee.first_name}</td>
-                <td>{employee.last_furigana}</td>
-                <td>{employee.first_furigana}</td>
                 <td>{employee.position_name}</td>
                 <td>{employee.department_name}</td>
                 <td>{employee.degree_name}</td>
@@ -70,7 +68,7 @@ function EmployeeInfoList({
                 </td>
                 <td>
                   <Button
-                    text={'編集'}
+                    text={'Edit'}
                     onClick={() => handleEditClick(index)}
                     className="employeeListEditButton"
                   />
@@ -83,7 +81,7 @@ function EmployeeInfoList({
       {editEmployeeIndex !== null && (
         <div id="modal" className="modal">
           <EmployeeInfoEditModal
-            buttonText="保存"
+            buttonText="Save"
             handleButtonClick={(registerInfo) => {
               handleSaveButtonClick(
                 registerInfo,

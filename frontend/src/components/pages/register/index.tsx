@@ -7,7 +7,7 @@ function Register() {
   const { mutate } = useAddEmployeeData()
 
   const handleRegister = (registerInfo: EmployeeWithoutId) => {
-    alert('登録されました')
+    alert('Registered!')
     mutate(registerInfo)
   }
 
@@ -15,7 +15,7 @@ function Register() {
     <Layout>
       <div className="registerBox">
         <EmployeeInfoRegister
-          buttonText="登録"
+          buttonText="Register"
           handleButtonClick={handleRegister}
           isClearInput={true}
         />

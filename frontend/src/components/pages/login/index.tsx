@@ -39,7 +39,7 @@ export function Login() {
     <Layout>
       <div className="loginDiv ">
         {!isInfoCorrect && (
-          <p className="wrongLoginInfo">IDまたはパスワードが間違っています</p>
+          <p className="wrongLoginInfo">ID or Password is not correct</p>
         )}
         <input
           className="idInput loginInput"
@@ -57,7 +57,7 @@ export function Login() {
         />
         {/* linkとonClickはどちらもクリック時の挙動を指してるので一緒にはおかない */}
         <Button
-          text={'ログイン'}
+          text={'Login'}
           onClick={() => handleLoginButtonClick(user_id, password)}
         />
       </div>

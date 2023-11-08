@@ -14,7 +14,7 @@ export function RankOptions({
   const { data: degreeData } = useQueryOptionsData<OptionBase[]>(degree)
   return (
     <ShowOptions
-      labelName={'等　　級'}
+      labelName={'Rank'}
       id={'degree_id'}
       optionItem={degreeData}
       onChange={onChange}

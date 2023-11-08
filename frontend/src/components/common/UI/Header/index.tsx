@@ -21,11 +21,11 @@ function Header() {
               alt="headerIcon"
               className="icon"
             ></img>
-            人事管理 HR app
+            HR app
           </h3>
           {isLogin && (
             <Button
-              text={'ログアウト'}
+              text={'Logout'}
               onClick={handleLogoutButton}
               className="logoutButton"
             />

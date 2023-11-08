@@ -12,9 +12,9 @@ function LandingPage() {
       <Layout>
         <div className="landingPageWrapper">
           <div className="menu">
-            <LinkButton link={'employeeList'} text={'社員一覧'} />
-            <LinkButton link={'register'} text={'社員登録'} />
-            <LinkButton link={'setting'} text={'各種設定'} />
+            <LinkButton link={'employeeList'} text={'List'} />
+            <LinkButton link={'register'} text={'Register'} />
+            <LinkButton link={'setting'} text={'Setting'} />
           </div>
           <div className="searchWrapper">
             <Search />
