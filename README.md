@@ -16,7 +16,7 @@ HR app which you can register employee and manage.
 - Express 4.18.2
 - Typescript 5.1.3
 
-#### データベース
+#### Database
 
 - MySQL2 3.4
 
