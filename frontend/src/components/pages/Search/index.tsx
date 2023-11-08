@@ -101,13 +101,15 @@ function Search() {
           onChange={(e) => {
             handleSearchInput(e)
           }}
-          placeholder="社員名を入力してください"
+          placeholder="Search Employee"
           className="searchInput"
         />
-        <div className="tooltip">
-          漢字またはカタカナで氏名を検索してください
-        </div>
-        <Button type="button" text={'検索'} onClick={handleSearchButtonClick} />
+        <div className="tooltip">Search by first name or last name</div>
+        <Button
+          type="button"
+          text={'Search'}
+          onClick={handleSearchButtonClick}
+        />
       </div>
       {searchedName !== null &&
         (isLoading === false && data?.length === 0 ? (

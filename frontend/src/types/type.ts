@@ -1,8 +1,6 @@
 export type EmployeeBase = {
   first_name: string | null
   last_name: string | null
-  first_furigana: string | null
-  last_furigana: string | null
   birthday: string | null
   phone_number: string | null
   education: string | null

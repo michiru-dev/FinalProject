@@ -16,7 +16,7 @@ export function ContractOptions({
   //reduxのcontractの配列を取得
   return (
     <ShowOptions
-      labelName={'契約形態'}
+      labelName={'Contract Type'}
       id={'contract_id'}
       optionItem={contractData}
       onChange={onChange}
