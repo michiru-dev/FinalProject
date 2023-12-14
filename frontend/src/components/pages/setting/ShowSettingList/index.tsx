@@ -35,7 +35,7 @@ export function ShowSettingList({ settingType, ...rest }: SettingActions) {
                   onChange={handleEditInputChange}
                 />
                 <Button
-                  text={'保存'}
+                  text={'Save'}
                   onClick={() => handleEditSubmit(setting.id)}
                 />
               </div>
